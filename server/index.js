@@ -16,12 +16,14 @@ app.get(`/questions/:id`, (req, res) => {
       `https://app-hrsei-api.herokuapp.com/api/fec2/hrnyc/qa/questions/?product_id=${req.params.id}&count=60`,
       {
         headers: {
-          Authorization: "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",
+          Authorization: "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",
         },
       }
     )
     .then((response) => {
       res.status(200).json(response.data);
+    }).catch((err)=> {
+      console.error(err)
     });
 });
 
@@ -39,7 +41,7 @@ app.post("/qa/questions", (req, res) => {
       question,
       {
         headers: {
-          Authorization: "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",
+          Authorization: "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",
         },
       }
     )
