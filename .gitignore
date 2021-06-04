@@ -24,4 +24,6 @@ coverage
 build/
 dist/
 
+# Your bundled files from your services
+public/*.js
 
