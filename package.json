@@ -4,9 +4,9 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test"
+    "test": "jest",
+    "build": "webpack --mode development --config webpack.config.js",
+    "start": "node ./server/index.js"
   },
   "author": "RBK Tunisia",
   "license": "ISC",
