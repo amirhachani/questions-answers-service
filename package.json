@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --mode development --config webpack.config.js",
-    "start": "node ./server/index.js"
+    "start": "node ./server/index.js",
+    "heroku-postbuild": "npm run build"
   },
   "author": "RBK Tunisia",
   "license": "ISC",
